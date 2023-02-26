@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/json-logic-js": "^2.0.1",
+    "json-logic-js": "^2.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

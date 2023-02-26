@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Alert 1",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "follow"]},
+        {"===": [{"var": "enabled"}, true]}
+      ]
+    }
+  },
+  {
+    "name": "Alert 2",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "follow"]},
+        {"===": [{"var": "enabled"}, false]}
+      ]
+    }
+  },
+  {
+    "name": "Alert 3",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "unfollow"]},
+        {"===": [{"var": "enabled"}, true]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer 100 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {">=": [{"var": "amount"}, 100]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer 1000 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {">=": [{"var": "amount"}, 1000]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer 500 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {">=": [{"var": "amount"}, 500]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer Below 800 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {"<=": [{"var": "amount"}, 800]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer Below 700 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {"<=": [{"var": "amount"}, 700]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer Below 700 Bits (S+)",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {"<=": [{"var": "amount"}, 700]},
+        {"===": [{"var": "supercheer"}, true]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer Above 700 Bits (S+)",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {">=": [{"var": "amount"}, 700]},
+        {"===": [{"var": "supercheer"}, true]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer Below 800 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {"<=": [{"var": "amount"}, 800]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer 900 Bits",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]},
+        {">=": [{"var": "amount"}, 900]}
+      ]
+    }
+  },
+  {
+    "name": "Cheer (Default)",
+    "conditions": {
+      "and": [
+        {"===": [{"var": "type"}, "cheer"]},
+        {"===": [{"var": "enabled"}, true]}
+      ]
+    }
+  }
+]
